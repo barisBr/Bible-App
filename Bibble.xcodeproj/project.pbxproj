@@ -6,17 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9CB36EE42E84394700DF8261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB36EE02E84394700DF8261 /* Assets.xcassets */; };
+		9CB36EE52E84394700DF8261 /* BibbleChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB36EE12E84394700DF8261 /* BibbleChatApp.swift */; };
+		9CB36EE62E84394700DF8261 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB36EE22E84394700DF8261 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9CB36E5A2E841C2200DF8261 /* Bibble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bibble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB36EE02E84394700DF8261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CB36EE12E84394700DF8261 /* BibbleChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibbleChatApp.swift; sourceTree = "<group>"; };
+		9CB36EE22E84394700DF8261 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		9CB36E5C2E841C2200DF8261 /* Bibble */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Bibble;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9CB36E572E841C2200DF8261 /* Frameworks */ = {
@@ -32,7 +33,7 @@
 		9CB36E512E841C2200DF8261 = {
 			isa = PBXGroup;
 			children = (
-				9CB36E5C2E841C2200DF8261 /* Bibble */,
+				9CB36EE32E84394700DF8261 /* Bibble */,
 				9CB36E5B2E841C2200DF8261 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +44,56 @@
 				9CB36E5A2E841C2200DF8261 /* Bibble.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9CB36EDB2E84394700DF8261 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9CB36EDC2E84394700DF8261 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9CB36EDD2E84394700DF8261 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		9CB36EDE2E84394700DF8261 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				9CB36EDB2E84394700DF8261 /* Entities */,
+				9CB36EDC2E84394700DF8261 /* Repository */,
+				9CB36EDD2E84394700DF8261 /* UseCases */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		9CB36EDF2E84394700DF8261 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9CB36EDE2E84394700DF8261 /* Chat */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9CB36EE32E84394700DF8261 /* Bibble */ = {
+			isa = PBXGroup;
+			children = (
+				9CB36EDF2E84394700DF8261 /* Domain */,
+				9CB36EE02E84394700DF8261 /* Assets.xcassets */,
+				9CB36EE12E84394700DF8261 /* BibbleChatApp.swift */,
+				9CB36EE22E84394700DF8261 /* ContentView.swift */,
+			);
+			path = Bibble;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +110,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				9CB36E5C2E841C2200DF8261 /* Bibble */,
 			);
 			name = Bibble;
 			packageProductDependencies = (
@@ -109,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB36EE42E84394700DF8261 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB36EE52E84394700DF8261 /* BibbleChatApp.swift in Sources */,
+				9CB36EE62E84394700DF8261 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
