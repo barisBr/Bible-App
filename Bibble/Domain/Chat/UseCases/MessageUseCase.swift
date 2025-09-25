@@ -8,6 +8,6 @@
 import Foundation
 
 protocol MessageUseCase {
-    func sendMessage(content: String, in session: SessionEntity) async throws -> MessageEntity
+    func sendMessage(content: String, in session: SessionEntity) async throws
     func observeMessages(session: SessionEntity) -> AsyncStream<MessageEntity>
 }

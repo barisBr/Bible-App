@@ -8,6 +8,6 @@
 import Foundation
 
 protocol ChatRepository {
-    func sendMessage(_ content: String, in session: SessionEntity) async throws -> MessageEntity
+    func sendMessage(_ content: String, in session: SessionEntity) async throws 
     func observeMessages(in session: SessionEntity) -> AsyncStream<MessageEntity>
 }
