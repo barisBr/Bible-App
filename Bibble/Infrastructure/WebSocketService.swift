@@ -8,11 +8,18 @@
 import Foundation
 
 
-enum WebSocketState {
+public enum WebSocketError: Error {
+    case sendFailed
+    case receiveFailed
+    case disconnected
+    case unknown(String)
+}
+
+public enum WebSocketState {
     case connected
     case disconnected
     case connecting
-    case failed(Error)
+    case failed(WebSocketError)
 }
 
 protocol WebSocketService {
